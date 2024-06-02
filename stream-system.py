@@ -80,7 +80,7 @@ def main():
     if not st.session_state['logged_in']:
         login()
     else:
-        file_url = "https://github.com/mahmoudsayedashour/System1/blob/main/System%20Overview%20(1)%20(1).pptx"  
+        file_url = "https://github.com/mahmoudsayedashour/System1/raw/main/System%20Overview%20(1)%20(1).pptx"  
         file_path = download_presentation(file_url)
         presentation = load_presentation(file_path)
         display_presentation(presentation)
