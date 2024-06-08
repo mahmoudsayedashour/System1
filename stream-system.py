@@ -80,7 +80,7 @@ def main():
     if not st.session_state['logged_in']:
         login()
     else:
-        file_url = "https://github.com/mahmoudsayedashour/Social-Media-Effects/blob/main/BI%20Service%20final%20%20001.pptx"  
+        file_url = "https://github.com/mahmoudsayedashour/Social-Media-Effects/raw/main/BI%20Service%20final%20%20001.pptx"  
         file_path = download_presentation(file_url)
         presentation = load_presentation(file_path)
         display_presentation(presentation)
